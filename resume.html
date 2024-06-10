@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME-DOM</title>
+</head>
+
+<body>
+    <h3>// Creating resume using only DOM</h3>
+
+    <script>
+        var body = document.body;
+
+        // Create and style the h2 element
+        var h2Name = document.createElement("h2");
+        h2Name.style.textAlign = "center";
+        var Name = document.createTextNode("SHIVA CHAITHANYA");
+        h2Name.appendChild(Name);
+
+        body.appendChild(h2Name);
+
+        // Create and style the p element
+        var para = document.createElement("p");
+        para.style.textAlign = "center";
+        var details = document.createTextNode("+91 7680952976 | shivachaithanyabodas@gmail.com | linkedin.in/shivachaithaya");
+        para.appendChild(details);
+
+        body.appendChild(para);
+
+        console.log(para);
+
+        // Create and style the hr element
+        var hr = document.createElement("hr");
+
+        body.appendChild(hr);
+
+        console.log(hr);
+
+        // Create and style the h3 element
+        var h3Name = document.createElement("h3");
+        var Name = document.createTextNode("SUMMARY");
+        h3Name.appendChild(Name);
+
+        body.appendChild(h3Name);
+
+        console.log(h3Name);
+
+        // Create and style the p element
+        var para = document.createElement("p");
+        var details = document.createTextNode("Enthusiastic and Detail-oriented BTech graduate with a keen focus on detail and a comprehensive understanding of engineering principles and programming languages. With a strong academic background, I am well-equipped to contribute to diverse projects in IT and across various industries. My proficiency in various programming languages, coupled with a natural ability for problem-solving and analysis, allows me to approach challenges with creativity and efficiency. I am eager to apply these skills within a dynamic team environment, where I can actively contribute to innovative projects while continually expanding my knowledge and expertise.");
+        para.appendChild(details);
+
+        body.appendChild(para);
+
+        console.log(para);
+
+        // Create and style the hr element
+        var hr = document.createElement("hr");
+
+        body.appendChild(hr);
+
+        // Create and style the h3 element
+        var h3Name = document.createElement("h3");
+        var Name = document.createTextNode("EDUCATION");
+        h3Name.appendChild(Name);
+
+        body.appendChild(h3Name);
+
+        console.log(h3Name);
+
+        // Create and style the table element
+        var table = document.createElement("table");
+        table.style.border = "2px solid black"
+        table.style.borderCollapse = "collapse"
+        table.style.width = "100%"
+        var tr = document.createElement("tr");
+        tr.style.border = "2px solid black"
+        tr.style.borderCollapse = "collapse"
+        var th = document.createElement("th");
+        th.style.border = "2px solid black"
+        th.style.borderCollapse = "collapse"
+        var th2 = document.createElement("th");
+        th2.style.border = "2px solid black"
+        th2.style.borderCollapse = "collapse"
+        var th3 = document.createElement("th");
+        th3.style.border = "2px solid black"
+        th3.style.borderCollapse = "collapse"
+
+        table.appendChild(tr);
+        tr.appendChild(th);
+        tr.appendChild(th2);
+        tr.appendChild(th3);
+        var education = document.createTextNode("Education");
+        var institute = document.createTextNode("Institute");
+        var course = document.createTextNode("Course");
+        th.appendChild(education);
+        th2.appendChild(institute);
+        th3.appendChild(course);
+
+        var tr = document.createElement("tr");
+        tr.style.border = "2px solid black"
+        tr.style.borderCollapse = "collapse"
+        var td = document.createElement("td");
+        td.style.border = "2px solid black"
+        td.style.borderCollapse = "collapse"
+
+        var td2 = document.createElement("td");
+        td2.style.border = "2px solid black"
+        td2.style.borderCollapse = "collapse"
+        var td3 = document.createElement("td");
+        td3.style.border = "2px solid black"
+        td3.style.borderCollapse = "collapse"
+
+        table.appendChild(tr);
+        td.style.border = "2px solid black"
+        td.style.borderCollapse = "collapse"
+        tr.appendChild(td);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        var BTech = document.createTextNode("B.Tech");
+        var BTechName = document.createTextNode("St. Mary's Group Of Institutions Hyderabad");
+        var BTechCourse = document.createTextNode("ECE");
+        td.appendChild(BTech);
+        td2.appendChild(BTechName);
+        td3.appendChild(BTechCourse);
+
+
+        var tr = document.createElement("tr");
+        tr.style.border = "2px solid black"
+        tr.style.borderCollapse = "collapse"
+        var td = document.createElement("td");
+        td.style.border = "2px solid black"
+        td.style.borderCollapse = "collapse"
+        var td2 = document.createElement("td");
+        td2.style.border = "2px solid black"
+        td2.style.borderCollapse = "collapse"
+        var td3 = document.createElement("td");
+        td3.style.border = "2px solid black"
+        td3.style.borderCollapse = "collapse"
+
+        table.appendChild(tr);
+        tr.appendChild(td);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        var inter = document.createTextNode("Intermediate");
+        var interName = document.createTextNode("Rao's Junior College");
+        var intermediateCourse = document.createTextNode("MPC");
+        td.appendChild(inter);
+        td2.appendChild(interName);
+        td3.appendChild(intermediateCourse);
+
+        body.appendChild(table);
+
+        var tr = document.createElement("tr");
+        tr.style.border = "2px solid black"
+        tr.style.borderCollapse = "collapse"
+        var td = document.createElement("td");
+        td.style.border = "2px solid black"
+        td.style.borderCollapse = "collapse"
+        var td2 = document.createElement("td");
+        td2.style.border = "2px solid black"
+        td2.style.borderCollapse = "collapse"
+        var td3 = document.createElement("td");
+        td3.style.border = "2px solid black"
+        td3.style.borderCollapse = "collapse"
+
+        table.appendChild(tr);
+        tr.appendChild(td);
+        tr.style.border = "2px solid black"
+        tr.style.borderCollapse = "collapse"
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        var school = document.createTextNode("Secondary School");
+        var schoolName = document.createTextNode("St. John's High School");
+        var schoolCourse = document.createTextNode("SSC");
+        td.appendChild(school);
+        td2.appendChild(schoolName);
+        td3.appendChild(schoolCourse);
+
+        body.appendChild(table);
+
+        // Create and style the hr element
+        var hr = document.createElement("hr");
+
+        body.appendChild(hr);
+
+        // Create and style the h3 element
+        var h3Name = document.createElement("h3");
+        var Name = document.createTextNode("TECHNICAL SKILLS");
+        h3Name.appendChild(Name);
+
+        body.appendChild(h3Name);
+
+        // Creating the ul & li elements
+        var ul = document.createElement("ul");
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("C");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        var li = document.createElement("li");
+        var Name = document.createTextNode("Java");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("MS-Office");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("Editing");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("Content Creation");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        // Create and style the hr element
+        var hr = document.createElement("hr");
+
+        body.appendChild(hr);
+
+        // Create and style the h3 element
+
+        var h3Name = document.createElement("h3");
+        var Name = document.createTextNode("SOFT SKILLS");
+        h3Name.appendChild(Name);
+
+        body.appendChild(h3Name);
+
+        console.log(h3Name);
+
+        // Creating the ul & li elements
+
+        var ul = document.createElement("ul");
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("Communication");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("Adaptability");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("Team Work");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("Adaptability");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        var li = document.createElement("li");
+
+        var Name = document.createTextNode("Time Management");
+        li.appendChild(Name);
+
+        ul.appendChild(li);
+        body.appendChild(ul);
+
+        // Create and style the hr element
+        var hr = document.createElement("hr");
+
+        body.appendChild(hr);
+
+        // Create and style the h3 element
+
+        var h3Name = document.createElement("h3");
+        var Name = document.createTextNode("DECLARATION");
+        h3Name.appendChild(Name);
+
+        body.appendChild(h3Name);
+
+        // Create and style the p element
+        var para = document.createElement("p");
+        var details = document.createTextNode("I hereby declare that the information provided in this resume is accurate and true to the best of my knowledge. I understand that any misrepresentation or omission of facts may result in disqualification from employment. I authorize the verification of all information provided, including educational history.");
+        para.appendChild(details);
+
+        body.appendChild(para);
+
+        console.log(document);
+    </script>
+</body>
+
+</html>

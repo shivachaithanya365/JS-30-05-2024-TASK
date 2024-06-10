@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROPDOWN-DOM</title>
+    <style>
+        select {
+            width: 100px;
+            margin: 30px 46%;
+            margin-bottom: 200px;
+            width: 80px;
+            text-align: center;
+        }
+        h1,h3 {
+            text-align: center;
+        }
+        pre {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>// Take an array of strings and create a dropdown using the array values. The dropdown values should be generated dynamically. If a value with an even length is selected from the dropdown, it should display 1 in the console; otherwise, if the length is odd, it should display 0. Use only the DOM in JavaScript for this task.</h3>
+
+    <h1>DROPDOWN</h1>
+
+    <script>
+        var body = document.body;
+
+        var form = document.createElement("form");
+
+        var select = document.createElement("select");
+
+        for (var i = 1; i <= 10; i++) {
+            var option = document.createElement("option");
+            option.setAttribute("text", "Option " + i);
+            select.appendChild(option);
+        }
+
+        form.appendChild(select);
+        body.appendChild(form);
+
+        console.log(document);
+
+        var a = ["Hello", "hie", "shiva", "4", "true", "html", "css", "javascript", "react", "10"];
+
+        var b = document.getElementsByTagName("option");
+
+        for (i = 0; i < a.length; i++) {
+            b[i].innerText = a[i];
+            if (a[i].length % 2 === 0) {
+                console.log(1);
+            }
+            else {
+                console.log(0);
+            }
+        }
+        
+    </script>
+        <h3>SOURCE CODE :</h3>
+
+        <pre>
+            var body = document.body;
+    
+            var form = document.createElement("form");
+    
+            var select = document.createElement("select");
+    
+            for (var i = 1; i <= 10; i++) {
+                var option = document.createElement("option");
+                option.setAttribute("text", "Option " + i);
+                select.appendChild(option);
+            }
+    
+            form.appendChild(select);
+            body.appendChild(form);
+    
+            console.log(document);
+    
+            var a = ["Hello", "hie", "shiva", "4", "true", "html", "css", "javascript", "react", "10"];
+    
+            var b = document.getElementsByTagName("option");
+    
+            for (i = 0; i < a.length; i++) {
+                b[i].innerText = a[i];
+                if (a[i].length % 2 === 0) {
+                    console.log(1);
+                }
+                else {
+                    console.log(0);
+                }
+            }
+        </pre>
+</body>
+
+</html>
